@@ -1,5 +1,5 @@
 {
-    "name": "ivvycode/ivvy-sdk-php",
+    "name": "pratik-ivvy/ivvy-sdk-php",
     "description": "A PHP 5.6 compatible, PSR-4 and PSR-2 compliant SDK to work with iVvy's API 1.0",
     "type": "library",
     "require": {
