@@ -17,7 +17,7 @@ final class Job
 
     protected $params;
 
-    public function __construct(string $namespace, string $action, array $params = [])
+    public function __construct($namespace, $action, array $params = [])
     {
         $this->namespace = $namespace;
         $this->action = $action;

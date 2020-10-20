@@ -1,7 +1,5 @@
 <?php
 
-
-
 namespace Ivvy;
 
 use GuzzleHttp\Client;
@@ -36,8 +34,8 @@ class Ivvy
      * @param Client $client
      */
     public function __construct(
-        string $apiKey,
-        string $apiSecret,
+        $apiKey,
+        $apiSecret,
         Signature $signature,
         Client $client
     ) {
@@ -104,7 +102,7 @@ class Ivvy
      *
      * @return array
      */
-    public function result(string $async)
+    public function result($async)
     {
         $requestUri = $this->createRequestUri('batch', 'results');
         $body = json_encode(compact('async'));
@@ -315,7 +313,7 @@ class Ivvy
      *
      * @return array<Invoice>|null
      */
-    public function getInvoiceListFromDate(string $fromModifiedDate)
+    public function getInvoiceListFromDate($fromModifiedDate)
     {
         $requestUri = $this->createRequestUri('invoice', 'getInvoiceList');
         if (!is_null($fromModifiedDate)) {
@@ -420,7 +418,7 @@ class Ivvy
      *
      * @return string
      */
-    protected function createRequestUri(string $namespace, string $action)
+    protected function createRequestUri($namespace, $action)
     {
         $apiVersion = self::API_VERSION; // It just looks cooler this way
 
@@ -435,7 +433,7 @@ class Ivvy
      *
      * @return array
      */
-    protected function createHeaders(string $body, string $requestUri)
+    protected function createHeaders($body, $requestUri)
     {
         $contentType = 'application/json';
         $contentMd5 = md5($body);

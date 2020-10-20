@@ -10,11 +10,11 @@ namespace Ivvy;
 class Signature
 {
     public function sign(
-        string $apiSecret,
-        string $contentMd5,
-        string $requestUri,
+        $apiSecret,
+        $contentMd5,
+        $requestUri,
         array $ivvyHeaders = [],
-        string $date = null,
+        $date = null,
         $method = 'POST',
         $contentType = 'application/json',
         $apiVersion = '1.0'

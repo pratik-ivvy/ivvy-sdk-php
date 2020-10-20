@@ -16,7 +16,7 @@ class CustomField extends BaseModel
     /**
      * Construct a new CustomField object
      */
-    public function __construct(string $fieldId, string $displayName, string $value)
+    public function __construct($fieldId, $displayName, $value)
     {
         $this->fieldId     = $fieldId;
         $this->displayName = $displayName;
