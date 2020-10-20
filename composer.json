@@ -1,0 +1,26 @@
+{
+    "name": "ivvycode/ivvy-sdk-php",
+    "description": "A PHP 5.6 compatible, PSR-4 and PSR-2 compliant SDK to work with iVvy's API 1.0",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^3.0",
+        "symfony/event-dispatcher": "3.4.3",
+        "respect/validation": "^1.1"
+    },
+    "require-dev": {},
+    "license": "MIT",
+    "authors": [{
+        "name": "Christopher Francisco",
+        "email": "christopher.f.almanza@gmail.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "Ivvy\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IvvyTest\\": "tests/"
+        }
+    }
+}
