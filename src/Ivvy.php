@@ -2,7 +2,7 @@
 
 namespace Ivvy;
 
-use GuzzleHttp\Client;
+use Guzzle\Http\Client;
 use Ivvy\Model\Company;
 use Ivvy\Model\Invoice;
 use Ivvy\Model\InvoiceItem;
